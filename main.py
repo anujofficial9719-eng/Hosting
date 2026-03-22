@@ -44,8 +44,8 @@ except ValueError:
     logger.error("OWNER_ID or ADMIN_ID must be valid integers!")
     raise
 
-YOUR_USERNAME = YOUR_USERNAME or '@GOAT_NG'
-UPDATE_CHANNEL = UPDATE_CHANNEL or 'https://t.me/YourChannel'
+YOUR_USERNAME = YOUR_USERNAME or '@Anujedits76'
+UPDATE_CHANNEL = UPDATE_CHANNEL or 'https://t.me/log_channel_a'
 
 BASE_DIR = Path(__file__).parent.absolute()
 UPLOAD_BOTS_DIR = BASE_DIR / 'upload_bots'
@@ -204,7 +204,7 @@ def get_main_keyboard(user_id):
             [InlineKeyboardButton(text="ℹ️ Help & Info", callback_data="help_info"),
              InlineKeyboardButton(text="🎯 Features", callback_data="all_features")],
             [InlineKeyboardButton(text="👨‍💼 Admin Panel", callback_data="admin_panel"),
-             InlineKeyboardButton(text="💬 Contact", url=f"https://t.me/{YOUR_USERNAME.replace('@', '')}")]
+             InlineKeyboardButton(text="💬 Contact", url=f"https://t.me/{YOUR_USERNAME.replace('@', 'anujedits76')}")]
         ])
     else:
         keyboard = InlineKeyboardMarkup(inline_keyboard=[
@@ -218,7 +218,7 @@ def get_main_keyboard(user_id):
             [InlineKeyboardButton(text="💎 Get Premium", callback_data="get_premium"),
              InlineKeyboardButton(text="ℹ️ Help", callback_data="help_info")],
             [InlineKeyboardButton(text="🎯 Features", callback_data="all_features"),
-             InlineKeyboardButton(text="💬 Contact Owner", url=f"https://t.me/{YOUR_USERNAME.replace('@', '')}")]
+             InlineKeyboardButton(text="💬 Contact Owner", url=f"https://t.me/{YOUR_USERNAME.replace('@', 'anujedits76')}")]
         ])
     return keyboard
 
@@ -681,7 +681,7 @@ async def callback_get_premium(callback: types.CallbackQuery):
 """
     
     back_keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="💬 Contact Owner", url=f"https://t.me/{YOUR_USERNAME.replace('@', '')}")],
+        [InlineKeyboardButton(text="💬 Contact Owner", url=f"https://t.me/{YOUR_USERNAME.replace('@', 'anujedits76')}")],
         [InlineKeyboardButton(text="🏠 Main Menu", callback_data="back_to_main")]
     ])
     
